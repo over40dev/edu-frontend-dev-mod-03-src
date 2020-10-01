@@ -1,5 +1,13 @@
+var title = document.getElementById('title');
 var myButton = document.getElementById("btn");
+var counter = 5
+
 myButton.addEventListener('click', () => {
-  console.log('You clicked header button and changed the bg-color!');
-  myButton.style.background = "red";
+  // add one line
+  console.log(counter);
+  counter+=5;
+  console.log(counter);
+
+  // don't change this
+  myButton.textContent = counter;
 });
