@@ -1,5 +1,7 @@
+var title = document.getElementById('title');
+
 var myButton = document.getElementById("btn");
 myButton.addEventListener('click', () => {
-  console.log('You clicked header button and changed the bg-color!');
   myButton.style.background = "red";
+  title.textContent = "I'm learning JS!!!";
 });
