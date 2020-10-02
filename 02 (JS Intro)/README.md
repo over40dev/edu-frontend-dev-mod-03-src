@@ -3,10 +3,12 @@
 ## Modules
 
 1. intro to variables
-1. primitive data types
-1. complex data types (Arrays)
-1. complex data types (Objects-1)
-1. complex data types (Objects-2)
+2. primitive data types
+3. complex data types (Arrays)
+4. complex data types (Objects-1)
+5. complex data types (Objects-2)
+6. comparison operators
+7. conditionals
 
 ## Quick start
 
