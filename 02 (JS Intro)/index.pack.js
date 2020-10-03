@@ -68,40 +68,9 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-"use strict";
-
-
-//////////////////
-// Conditionals //
-//////////////////
-
-// How we ask our program a question about our data and then run a specific set of code depending on the answer.
-
-var color = "yellow";
-
-if (color === "red") {
-    console.log("It is red!");
-} else if (color === "yellow") {
-    console.log("It is yellow!");
-} else if (color === "black") {
-    console.log("It is black!");
-} else {
-    console.log("The color is not red or yellow");
-}
-
-// Login Form
-var username = 'rick123';
-var password = 'aL8#klfo';
-
-if (username !== 'rick123') {
-    console.log('username is incorrect');
-} else if (password !== 'aL8#klfo') {
-    console.log('password is incorrect');
-} else {
-    console.log('username and password is correct... logging in...');
-}
+throw new Error("Module build failed: Error: ENOENT: no such file or directory, open '/Users/cogentx/cx/_over40dev/edu-sb-fe-dev/Mod03-Interactive Web/02 (JS Intro)/index.js'");
 
 /***/ })
 /******/ ]);
