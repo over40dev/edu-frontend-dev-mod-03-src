@@ -68,9 +68,27 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-throw new Error("Module build failed: Error: ENOENT: no such file or directory, open '/Users/cogentx/cx/_over40dev/edu-sb-fe-dev/Mod03-Interactive Web/03 (JS Loops)/index.js'");
+"use strict";
+
+
+// loops and arrays part 1 Challenge: you are at your shift at the shop and the
+// owner has left you with a long list of things in the inventory. He has asked
+// you to find out how many 'mustard' bottles you have in stock. Use a for loop
+// to count the amount of 'mustard' you have.
+
+var shopInventory = ['milk', 'cheddar', 'mustard', 'ketchup', 'olive oil', 'cheddar', 'milk', 'garlic', 'mayo', 'carrots', 'cheddar', 'Mustard', 'mayo', 'orange juice'];
+
+var mustardCount = 0;
+
+for (var i = 0; i < shopInventory.length; i++) {
+  if (shopInventory[i].toLowerCase() === 'mustard') {
+    mustardCount++;
+  }
+}
+
+console.log(mustardCount);
 
 /***/ })
 /******/ ]);
