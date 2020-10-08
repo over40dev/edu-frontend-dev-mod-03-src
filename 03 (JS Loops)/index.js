@@ -1,43 +1,36 @@
-//For Loops with arrays Mini Challenge: Print out 20 items from your own a
+// For Loops with if statements We are trying to find a table for my speed
+// dating group to sit at, that is the most economical for the restaurant. How
+// many options do I have?
 
-const nhlTeams = [
-  'Hurricanes',
-  'Blue Jackets',
-  'Devils',
-  'Islanders',
-  'Rangers',
-  'Flyers',
-  'Penguins',
-  'Capitals',
-  'Bruins',
-  'Sabres',
-  'Red Wings',
-  'Panthers',
-  'Canadiens',
-  'Senators',
-  'Lightning',
-  'Maple Leafs',
-  'Blackhawks',
-  'Avalanche',
-  'Stars',
-  'Wild',
-  'Predators',
-  'Blues',
-  'Jets',
-  'Ducks',
-  'Coyotes',
-  'Flames',
-  'Oilers',
-  'Kings',
-  'Sharks',
-  'Canucks',
-  'Golden Knights'
-];
+const tableNumbers = [
+    5,
+    14,
+    7,
+    10,
+    20,
+    11,
+    12,
+    15,
+    3
+]
 
-console.warn('\nNHL Teams: (for-loop)');
-for (let i = 0; i < 20 && i < nhlTeams.length; i++) {
-  console.log(i+1+'-' + nhlTeams[i]);
+for (let i = 0; i < tableNumbers.length; i++) {
+    if (tableNumbers[i] % 2 === 0) {
+        console.log(tableNumbers[i])
+    }
 }
 
-console.warn('\nNHL Teams: (forEach)');
-nhlTeams.forEach((t,i) => console.log(`${i+1}-${t}`));
+// Mini Challenge: We have decided to play a game between all of us. Create a
+// loop that loops over the numbers given to each one of us. If the person has
+// even number, print out the word 'blue team'. If it is odd, print out the word
+// 'red team'.
+
+const people = 56
+
+for (let i = 1; i <= people; i++) {
+    if (i % 2 === 0) {
+        console.log(`${i} - Blue Team`);
+    } else {
+        console.log(`${i} - Red Team`);
+    }
+}
