@@ -1,36 +1,35 @@
-// loops and arrays part 2 Challenge: you are working at a very fancy new
-// nightclub and in charge of letting people in based on their age. If they are
-// not 21 years of age, you cannot let them in. Please send them a nice
-// personalised message letting them know. Dont forget to share your code on the
-// #share-your-code channel on discord.
+//Final Challenge
 
-const nightClubRegister = [
-    {
-        name: 'Ahmed',
-        lastname: 'Abdool',
-        age: 25,
-        gender: 'male'
-    }, {
-        name: 'Sally',
-        lastname: 'Morgan',
-        age: 18,
-        gender: 'female'
-    }, {
-        name: 'Dionne',
-        lastname: 'Brown',
-        age: 29,
-        gender: 'female'
-    }, {
-        name: 'Max',
-        lastname: 'Forrester',
-        age: 20,
-        gender: 'male'
-    }
+//Challenge: Using all your knowledge from this course, add 5 words to 
+//your scrabble board using only one for loop. 
+
+//As this challenge is the last in this course you will be expected to rely on
+//all the material you have learnt so far.
+
+//If you do get stuck please do reach out to the Scrimba community on Discord or
+//or feel free to google.
+
+const squares = Array.from(document.querySelectorAll('.grid div'));
+
+const layout = [
+    's','c','r','a','b','b','l','e','','','','','',
+    '','o','','','','','','','','','','','',
+    '','w','i','n','n','e','r','','','','','','',
+    '','','','','','','i','','','','','','',
+    '','','','','','','n','','','','','','',
+    '','','','','','','g','o','a','t','','','',
+    '','','','','','','','','','','','','',
+    '','','','','','','','','','','','','',
+    '','','','','','','','','','','','','',
+    '','','','','','','','','','','','','',
+    '','','','','','','','','','','','','',
+    '','','','','','','','','','','','','',
+    '','','','','','','','','','','','','',
 ];
 
-for (let i = 0; i < nightClubRegister.length; i++) {
-    const {name, lastname, age, gender} = nightClubRegister[i];
-    if (age < 21) {
-        console.log(`Sorry ${gender.toLowerCase() === 'male' ? 'Mr.' : 'Ms.'} ${name} ${lastname}, you have been denied access to the club because you do not meet the age requirement of 21.`)
+for (let i = 0; i < squares.length; i++) {
+    if (layout[i] !== '') {
+        squares[i].innerText = layout[i];
+        squares[i].classList.add('tile');
     }
 }
