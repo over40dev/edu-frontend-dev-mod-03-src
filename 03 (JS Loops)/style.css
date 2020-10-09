@@ -1,13 +1,13 @@
 body {
-    background-color: #333333;
+    background-color: #ACE7FF;
     display: flex;
     justify-content: center;
 }
 
 .grid {
     margin-top: 30px;
-    width: 360px;
-    height: 360px;
+    width: 416px;
+    height: 416px;
     border: solid white 8px;
     border-radius: 5px;
     display: flex;
@@ -15,46 +15,17 @@ body {
 }
 
 .grid div {
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
+    border: solid white 0.5px;
+    text-align: center;
+    font-size: 24px;
 }
 
-.wall {
-    background-color: #6EB5FF;
+.triple {
+    background-color: #FFBEBC;
 }
 
-.pac-dot {
-    background-color: white;
-    border: 5px solid #333333;
-    box-sizing: border-box;
-}
-
-.power-pellet {
-    background-color: #FFABAB;
-    border-radius: 10px;
-}
-
-.pac-man {
-    background-color: yellow;
-    border-radius: 10px;
-}
-
-.blinky {
-    background-color: red;
-    
-}
-
-.inky {
-    background-color: cyan;
-    
-}
-
-.pinky {
-    background-color: pink;
-    
-}
-
-.cylde {
-    background-color: orange;
-
+.tile {
+    background-color: #FFF5BA;
 }
